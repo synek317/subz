@@ -12,19 +12,19 @@ destinations = ["TST"]
 source = "SRC"
 
 [DEF.ROOM]
-| code | description |      occ       |  grp | properties | base_meal |
-|------|-------------|----------------|------|------------|-----------|
-| DBL  | Double room | P1:2 A1:2 C0:1 |      |            |           |
+| code | description |      occ       | grp | properties | base_meal |
+|------|-------------|----------------|-----|------------|-----------|
+| DBL  | Double room | P1:2 A1:2 C0:1 |     |            |           |
 
 [DEF.MEAL]
-| meal |    description    | grp |
-|------|-------------------|-----|
-| BB   | Bed and breakfast | BB  |
+| code |    description    | grp | properties |
+|------|-------------------|-----|------------|
+| BB   | Bed and breakfast | BB  |            |
 
 [RATE.PLAN]
-| dates | code |    description     | rooms | rules | props |
-|-------|------|--------------------|-------|-------|-------|
-|       | STD  | Standard rate plan | DBL   |       |       |
+| dates | code |    description     | rooms | rules | properties |
+|-------|------|--------------------|-------|-------|------------|
+|       | STD  | Standard rate plan | DBL   |       |            |
 
 [RATE.BASE]
 |       dates       | charge | room |  occ  | meal | amount | rules | rp  | id |
