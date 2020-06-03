@@ -6,8 +6,9 @@ Sublime-Z is a plugin for Sublime Text 3 to edit and test ARIZ files.
 # Features:
 
 - Add any section using command or menu item
-- Add all section headers at once from single command or menu item
-- Format all sections - when [Table Editor](https://github.com/vkocubinsky/SublimeTableEditor) plugin is installed
+- Add all section headers using command or menu item (`Add all section headers`)
+- Format all sections using command or menu item (`Format all sections`) - when [Table Editor](https://github.com/vkocubinsky/SublimeTableEditor) plugin is installed
+- Add missing sections and format all sections using command or menu item (`Reformat ARIZ`) - TableEditor plugin is required
 - Use aclr8 either from a binary or source code
 - Run aclr8 tests
 - Run single query
@@ -64,6 +65,31 @@ It may be good idea to first run `check aclr8 version` command and see if it wor
 - When some of the tests are failing, new tab will be opened. It ignores any changes and can be quickly closed by pressing `[ctrl] + w`
 - You *don't* have to save the `.ion` file in order to run tests or query
 - Use `Reformat ARIZ` command to add all sections headers and apply formatting
+
+# List of available sections:
+- CONTRACT
+- CONFIG
+- CUSTOM_INFO
+- QUERY_TRANSFORM
+- DEF_HOTEL
+- DEF_MEAL
+- DEF_ROOM 
+- RATE_PLAN
+- RATE_BASE
+- RATE_SUPPLEMENT
+- RATE_SUPPLEMENT_CAT
+- RATE_DISCOUNT
+- RATE_DISCOUNT_GROUP
+- RATE_DISCOUNT_CAT
+- TAX
+- TAX_GROUP
+- RATE_RULE
+- RESTRICTION
+- RATE_CNX
+- AVL.INV
+- AVL.STATE
+- AVL.BUCKET_STATE
+- TEST
 
 # Recipes:
 
