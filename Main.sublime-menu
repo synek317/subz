@@ -12,9 +12,9 @@
             "caption": "Insert section",
             "children": [
               {
-                "caption": "Insert [AVL.ALLOC] section",
-                "command": "subz_insert_section_avl_alloc",
-                "id": "subz_insert_section_avl_alloc"
+                "caption": "Insert [AVL.INV] section",
+                "command": "subz_insert_section_avl_inv",
+                "id": "subz_insert_section_avl_inv"
               },
               {
                 "caption": "Insert [AVL.BUCKET_STATE] section",
