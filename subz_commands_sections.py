@@ -154,3 +154,9 @@ class SubzFormatAllSections(sublime_plugin.TextCommand):
           self.view.sel().add(region)
         sublime.active_window().run_command('table_editor_next_field')
         self.view.sel().clear()
+
+        # table editor next_field adds new row in single-column tables, we need to remove them
+        empty_rows_regions = self.view.find_all(r"^[\s\n|]*$")
+
+        for region in reversed(empty_rows_regions):
+          self.view.replace(edit, region, "")
