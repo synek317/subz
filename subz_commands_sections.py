@@ -144,11 +144,11 @@ class SubzFormatAllSections(sublime_plugin.TextCommand):
     else:
       self.view.sel().clear()
 
-      header_regions = self.view.find_all(r"^\|-", 0)
+      header_regions = self.view.find_all(r"^\|(?!.*\n\|)", 0)
       number_of_regions = len(header_regions)
 
       if number_of_regions == 0:
-        sublime.message_dialog("To format sections you need to add all section headers first\nLines with '|-' are required")
+        sublime.message_dialog("No sections have been found")
       else:
         for region in header_regions:
           self.view.sel().add(region)
