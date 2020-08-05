@@ -20,3 +20,9 @@ def get_latest_search():
 
 def set_latest_search(value):
   settings().set("latest_search", value)
+
+def get_ariz_filter_path():
+  return settings().get("ariz_filter_path")
+
+def set_ariz_filter_path(value):
+  settings().set("ariz_filter_path", value)
