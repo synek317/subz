@@ -65,6 +65,8 @@ It may be good idea to first run `check aclr8 version` command and see if it wor
 - When some of the tests are failing, new tab will be opened. It ignores any changes and can be quickly closed by pressing `[ctrl] + w`
 - You *don't* have to save the `.ion` file in order to run tests or query
 - Use `Reformat ARIZ` command to add all sections headers and apply formatting
+- Use `Run aclr8 tests coupled` to run tests for contracts with SPO and cross contracts
+- Commands `Run aclr8 query` and `Run aclr8 query coupled` require dates in ions greater or equal today date
 
 # List of available sections:
 - CONTRACT

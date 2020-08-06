@@ -124,8 +124,16 @@
     "command": "subz_aclr8_tests"
   },
   {
+    "caption": "Run aclr8 tests coupled",
+    "command": "subz_aclr8_tests_coupled"
+  },
+  {
     "caption": "Run aclr8 query",
     "command": "subz_aclr8_query"
+  },
+  {
+    "caption": "Run aclr8 query coupled",
+    "command": "subz_aclr8_query_coupled"
   },
   {
     "caption": "Filter Ion",
