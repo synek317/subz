@@ -15,6 +15,7 @@ Sublime-Z is a plugin for Sublime Text 3 to edit and test ARIZ files.
 - Check aclr8 version
 - Add ARIZ ION examples
 - Filter Ion
+- Filter ARIZ Query - we can filter single ions using aclr8 query
 - Make use of ANSI escape codes when [ANSIescape](https://github.com/aziz/SublimeANSI) plugin in installed
 
 ![demo](https://github.com/anixe/subz/tree/master/img/demo.gif "Demo")
@@ -193,3 +194,16 @@ It may be good idea to first run `check aclr8 version` command and see if it wor
       `de:rb:20180101:20180110` - search for lines in `RATE.BASE` section which dose not contain passed date in section `DATES` column
       `ri:rs,rd:P[1-2]` - search lines matching regex in `RATE.SUPPLEMENT` and `RATE.DISCOUNT` sections
 3. To display help write `h` and press Enter
+
+## Filter ARIZ Query
+1. Create ARIZ as described previously
+2. Open Filter input
+  a. with mouse: choose `Tools -> Sublime-Z -> ARIZ Filter Query`
+  b. with keyboard: press `[shift] + [ctrl] + p` to open command input and then type `ARIZ Filter Query`
+3. We can use aclr8 query to filter ARIZ Files ex. `HB20201116$TEST:TEST/20210101+1/A1`
+4. Filter supports filtering by:
+  - room (allowed, disallowed)
+  - meal 
+  - occupancy (to skip filtering by occupancy we can pass A0)
+5. Filtering by occupancies supports `QueryTransform` section and filtering by meal supports meal upgrade supplements
+

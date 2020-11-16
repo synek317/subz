@@ -205,6 +205,17 @@
               ]
           },
           {
+             "id": "subz_ariz_filter_query",
+              "caption": "ARIZ Filter Query",
+              "children": [
+                {
+                  "caption": "ARIZ Filter Query",
+                  "command": "subz_ariz_filter_query",
+                  "id": "subz_ariz_filter_query"
+                }
+              ]
+          },
+          {
             "id": "subz_filter_ion",
             "caption": "Filter Ion",
             "children": [

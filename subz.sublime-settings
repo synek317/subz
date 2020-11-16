@@ -1,4 +1,5 @@
 {
     "aclr8_path": "aclr8i",
-    "show_ansi_escape_hint": true
+    "show_ansi_escape_hint": true,
+    "ariz_filter_path": "ariz_filter"
 }

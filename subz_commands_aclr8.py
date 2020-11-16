@@ -109,4 +109,5 @@ class SubzAclr8QueryCoupled(SubzAclr8Query):
         working_path = "{}/".format(working_path)
 
     SubzAclr8Query.last_query = query
+    
     run_aclr8_command("repl " + working_path, lambda output: self.on_success(output, working_path, is_temporary), lambda: self.on_fail(working_path, is_temporary), query)

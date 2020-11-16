@@ -138,5 +138,9 @@
   {
     "caption": "Filter Ion",
     "command": "subz_prompt_ion_filter_to_lines"
+  },
+  {
+    "caption": "ARIZ Filter Query",
+    "command": "subz_ariz_filter_query"
   }
 ]
